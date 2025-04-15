@@ -501,6 +501,7 @@ export default App
 5. 🚄上翻效果
 
  (1). 多行上翻，动画触发函数为`goFlipUpWithOcclusionMultiLines` ，组件为`FlipUpWithOcclusionMultiLines `，组件参数有`text`和`cnt`，`text`为字符串，`cnt`为每行的长度。您可以通过`spanClassName`和`containerClassName`参数设置`<span>`样式效果
+ 
  ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5532d812303c439fa1ef054231446511.gif#pic_center)
 
 示例代码：
