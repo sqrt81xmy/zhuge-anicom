@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.circlebar_progress {
+  transition-duration: 0.3s;
+}
+
+.wheel {
+  width: calc((240px) * var(--factor));
+  height: calc((240px) * var(--factor));
+}
+
+.wheel-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+  height: 40%;
+}
+
+.wheel-sum {
+  font-family: safiro-medium, sans-serif;
+  font-size: calc(var(--factor) * 50px);
+  position: relative;
+  top: -1.5vw;
+  left: 1.1vw;
+}
+
+.wheel-wrap {
+  height: calc(var(--factor) * 24px);
+  overflow: hidden;
+  display: flex;
+}
+
+.wheel-position {
+  position: absolute;
+  left: 20px;
+  bottom: 5vh;
+}
+
+.wheel-information {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "华文行楷";
+  font-size: calc(var(--factor) * 24px);
+  padding: 5px 0;
+  z-index: 2;
+}
+
+.wheel-information-imgContainer {
+  position: absolute;
+  right: 2.5vw;
+  bottom: 3.7vw;
+  width: 20vw;
+  height: 14vw;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.wheel-information-img {
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+
+.wheel-information-img:hover {
+  transform: scale(1.15);
+}
+
+.wheel-information-arr {
+  width: calc(var(--factor) * 24px);
+  height: calc(var(--factor) * 24px);
+  z-index: 10;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.wheel-information-arr:hover {
+  transform: scale(1.07);
+}
+
+.wheel-information-arr:active {
+  transform: scale(1);
+}
+
+.wheel-information-leftArr {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+}
+
+.wheel-information-rightArr {
+  position: absolute;
+  right: 3%;
+  top: 20%;
+}
+
+.wheel-topTitle {
+  position: relative;
+}
+
+.wheel-topTitlePos {
+  position: relative;
+}
+
+.wheel-bottomTitlePos {
+  position: relative;
+  bottom: 8px;
+}
+
+.wheel-mainCurInd {
+  font-size: calc(var(--factor) * 50px);
+  font-family: safiro-medium, sans-serif;
+}
+
+.wheel-mainCurInd-wrap {
+  overflow: hidden;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  top: 1.2vw;
+  right: 1.2vw;
+  height: calc(var(--factor) * 55px);
+}
+
+/*# sourceMappingURL=wheel.css.map */

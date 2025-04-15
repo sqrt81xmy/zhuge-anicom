@@ -1,0 +1,32 @@
+.TypeWriter{
+    animation: typing var(--TypeWriter-cycle) steps(var(--TypeWriter-textLength),end) var(--TypeWriter-infinite), blink .75s step-end var(--TypeWriter-blinkTimes);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: var(--TypeWriter-fontSize);
+    display: flex;
+    width: calc(var(--TypeWriter-textLength) * var(--TypeWriter-fontSize));
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: calc(var(--TypeWriter-textLength) * var(--TypeWriter-fontSize));
+    }
+    100%{
+        width: calc(var(--TypeWriter-textLength) * var(--TypeWriter-fontSize));
+    }
+}
+
+@keyframes blink {
+    0%{
+        box-shadow: 1px 0 0 0 transparent;
+    }
+    50%{
+        box-shadow: 1px 0 0 0 black;
+    }
+    100%{
+        box-shadow: 1px 0 0 0 transparent;
+    }
+}

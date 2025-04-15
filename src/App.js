@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CanvasEraser from "./components/CanvasEraser/Canvas_Eraser"
+// import CanvasEraser from "zhuge-animation"
+import "./App.css"
+//refrence App style:
+// width: 100vw;
+// height: 100vh;
+// position: relative;
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className = "App">
+            <CanvasEraser/>
+            <img src="/assets/b3.png" className="App-img"/>
+        </div>  
+    )
 }
 
-export default App;
+export default App

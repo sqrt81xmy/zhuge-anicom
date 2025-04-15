@@ -1,0 +1,9 @@
+.LightSweep{ 
+    font-family: "华文行楷";
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(var(--sweep-lightAngle), rgba(255,255,255,0) 40%, rgba(255, 255, 255, 0.7), rgba(255,255,255,0) 60%) var(--sweep-x) var(--sweep-y)/var(--sweep-width) var(--sweep-height) no-repeat currentColor;;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: var(--sweep-animationName) var(--sweep-cycle) var(--sweep-iteration);
+}
+ 

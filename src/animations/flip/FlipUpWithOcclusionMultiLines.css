@@ -1,0 +1,7 @@
+.fuwoml-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+        /* width: 7 * $title-size !important; */
+    justify-content: space-around;
+}

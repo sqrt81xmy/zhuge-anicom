@@ -1,0 +1,4 @@
+.FlipUpWithHistory{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,9 @@
+.fuwo-wrap{
+    overflow: hidden;
+    display: flex; 
+    width: fit-content;
+}
+.fuwo-wrapSpan{
+    transform: translateY(100%); 
+    opacity: 0;
+}
