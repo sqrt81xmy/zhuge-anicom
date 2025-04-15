@@ -1,6 +1,5 @@
 
-😍Welcom to the  
-documentation of zhuge-anicom🥰 
+😍Welcom to the documentation of zhuge-anicom🥰 
  
  ### 🦄Introduction of zhuge-animation
  这是一个基于`react`的组件➕︎动画库，他使用了`threejs`、 `GSAP `、 `CSS `技术实现了一下下面这些网页中的动画效果和组件，由于我使用的中文字体网站不定期寄掉，所以下面展示的界面未能达到最佳效果，希望您见谅哦~😭
@@ -23,10 +22,14 @@ documentation of zhuge-anicom🥰
 
  - 🥑相册
     这个网页是我使用 `threejs `结合 `GSAP `动画库开发的，里面有很多亮子的照片，~~太美了~~ 。这里的图片由于是用  `thrrejs `实现的，因此您不能再使用传统的 `css `控制图片形状了。这个网页我主要开源的是：
-    1. 图片悬浮后的粒子动效(动画)
+
+1. 图片悬浮后的粒子动效(动画)
  
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/bc288b128ef14626bd50bf3eab0279f0.gif#pic_center)
-         2. 点击图片后的扭一扭+放大+位置改变动画(使用 `threejs `实现)，三个动画分别开源![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a55f3dbcf0204f56a507c5630e963eee.gif#pic_center)
+
+2. 点击图片后的扭一扭+放大+位置改变动画(使用 `threejs `实现)，三个动画分别开源
+
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a55f3dbcf0204f56a507c5630e963eee.gif#pic_center)
 
  `tips `:这些网页目前为个人作品，由于未全部完成尚未开源😝。待全部完成后，将会进行上线。您可以借鉴网页的界面设计等，因为这些网页也只是我模仿优秀作品的练习。若您有任何问题，可在本贴下留言或前往 `Github `提 `issue `!
 
@@ -240,8 +243,8 @@ serve -s build
 
 这个组件中，您可以自行设置背景的颜色。颜色中一共有两个值需要设计，分别是 `uLowColor `和 `uHighColor `。其中 `uHighColor `是浮动颜色， `uLowColor `是底色。
 参数说明：
-1. `id `是在 `bgColor\_def `应该显示的颜色索引
-2. `bgColor\_def `是颜色数组
+1. `id `是在 `bgColor_def `应该显示的颜色索引
+2. `bgColor_def `是颜色数组
  `tips `:如果有内边距影响，您可以尝试将 `body `的 `margin `写成 `0 `
 
 由于[ `issue1790 `](https://github.com/resend/react-email/issues/1790)的存在，如果您需要使用该组件，您需要确保下面的结果是 `production `
@@ -432,6 +435,7 @@ export default App
      这是一个布尔变量，如果你设置为 `false `，那么你可以与其交互，只需要将 `animationKey `写成 `state `变量就可以。 如果该变量为 `true `，那么 `animationKey `为常量 
  5. `id `， `className `
  同一般 `html `用法，会加在`<span>`标签上
+
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/80a021ff813a480299fcdb05ac10f4c5.gif#pic_center)
 
 示例代码：
@@ -522,6 +526,7 @@ export default App
 (2).单行上翻
 参数说明：通过`text`传入文本，通过`wrapClassName`,`spanClassName`设置容器样式和字体样式。
 触发函数：`goFlipUpWithOcclusion`
+
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/9ed6f8334d7a43719c5d31477bdc2cb3.gif#pic_center)
 
 示例代码：
